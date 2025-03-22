@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="HTML, CSS, JavaScript"> 
+<meta name="description" content="The Perfect Cup, Everytime."> 
+<meta name="author" content="Ma. Alexa Jewelle V. Cabrera"> <br><br><br>
+<link rel="icon" type="img/png" href="https://scontent.fcrk1-5.fna.fbcdn.net/v/t1.15752-9/481586269_1273083587136245_6577705379291661834_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=NvPLPMahUX4Q7kNvgGyRn-E&_nc_oc=AdjV1GqIu3K_CLGtu-msnGfZ98azgCU0PZ4z5SfhTSyZG-KSh32v5UIwgkUpfEkCWiU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&oh=03_Q7cD1wGc5-9JnZ0VHB9iOSGYf9EFvDbznWzjrfG9lJcnpj_kgw&oe=67FD8942" style=width:"100%"; max-width:200 px;" alt="But First Coffee Logo">
+
+<title>But First, Coffee.</title>
+</head>
+<body>
+<header>
+</a>
+</header>
+<style>
+
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom right, #FFFFFF, #FFC0CB, #800080);
+         }
+        
+#products {
+        text-align: center;
+        padding: 50px 20px;
+        background: #f9f9f9;
+    }
+
+    .products-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 50px auto
+    }
+
+    .product {
+        background:#fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        color: black;
+        border-radius: 10px;
+        padding: 40px;
+        width: 300px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        overflow:hiddden;
+        display: inline-block;
+    }
+
+    .product:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .product img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+        align: center;
+    }
+
+    .product h3 {
+        font-size: 2rem;
+        color: #FF3EA5;
+        margin-top: 15px;
+    }
+
+    .product p {
+        font-size: 1.5rem;
+        color: #FF91A4;
+        margin-top: 10px;
+    }
+
+        .container {
+            width: 80%;
+            margin:20px auto;
+            padding: 2rem 7%;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+           display: flex;
+           justify-content: center;
+    	 background: linear-gradient(to right, #800080, #BA55D3, #DA70D6); 
+           padding: 10px;
+           flex-wrap: wrap;
+           position: sticky;
+           top: 0;
+   		      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+           width: 100%;
+           z-index: 1000;
+       }
+        nav table {
+            display: inline-block;
+        }
+
+        nav td {
+            padding: 10px;
+            font-weight: bold;
+        }
+
+		nav a {
+   			 color: white;
+  			 text-decoration: none;
+ 			 padding: 12px 20px;
+    		 font-weight: bold;
+   			 transition: background 0.3s ease-in-out;
+   			 border-radius: 5px;
+                          }
+
+                  nav a:hover {
+   			 background: rgba(255, 255, 255, 0.2);
+   			 color: #FFD700; 
+   			 border-radius: 5px;
+                            }
+
+        h2, p {
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 5px;
+         }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #FFFFFF, #FFC0CB, #800080);
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav table {
+            display: inline-block;
+        }
+
+        nav td {
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav a:hover {
+            color: #800080;
+        }
+
+        h2, p {
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 5px;
+        }
+
+        body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom right, #FFFFFF, #FFC0CB, #800080);
+         }
+
+.container {
+padding: 20px;
+border-radius: 10px;
+width: 80%;
+max-width: 600px;
+margin: 20px auto;
+text-align: center;
+background: rgba(255, 255, 255, 0.9);
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+color: black;
+}
+header {
+text-align: center;
+padding: 20px;
+}
+
+nav {
+position: fixed;
+height: 70px;
+right: 0;
+left: 0;
+top:0;
+text-align: center;
+margin-bottom: 20px;
+}
+
+nav table {
+display: inline-block;
+}
+
+nav td {
+padding: 10px;
+font-weight: bold;
+}
+nav a {
+color: black;
+text-decoration: none;
+padding: 12px 20px
+font-weight: bold;
+transition: background 0.3s ease-in-out;
+border-raidus: 5px;
+}
+nav a:hover {
+color: #800080;
+}
+ .nav {
+           display: flex;
+           justify-content: center;
+           background: #222;
+           padding: 10px;
+           flex-wrap: wrap;
+           position: sticky;
+           top: 0;
+           width: 100%;
+           z-index: 1000;
+        }
+h2, p {
+text-align: center;
+}
+img {
+           width: 100%;
+            max-width: 200px;
+            border-radius: 5px;
+            }
+            footer {
+            background-color: #BE2ED6;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+}
+.rating {
+        font-size: 1.5rem;
+        color: gold;
+        margin-top: 10px;
+    }
+       .reviews-section {
+    text-align: center;
+    padding: 40px 20px;
+        background: #f9f9f9;
+}
+
+.review {
+ background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 320px;
+    height: auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.review:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.review img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.review h3 {
+    font-size: 1.4em;
+    margin-top: 10px;
+}
+
+.review p {
+    font-size: 1.4em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.rating span {
+    font-size: 1.5em;
+}
+</style>
+   
+</head>
+<body>
+
+<header>
+<section class="hero" id="home">
+
+            <img src="img/logo.png" alt="But First, Coffee" title="But First, Coffee">
+        <h1 style="text-align: center;">But First, Coffee ☕</h1>
+    
+
+        <nav>
+        <table>
+            <tr>
+                <td><a href="#about">About & Services</a></td>
+                <td><a href="#products">Products</a></td>
+                <td><a href="#contact">Contact</a></td>
+            </tr>
+        </table>
+    </nav>
+</header>
+
+</body>
+
+<div class="container" id="about">
+ <section>
+   <h2 style="color: #FF5D8F;"><strong>ABOUT</strong></h2>
+<p>Here at But First, Coffee, we serve handcrafted coffee and freshly baked pastries made with the finest ingredients. Whether you're looking for a morning pick-me-up, a cozy place to unwind, or a sweet treat to brighten your day, we’ve got you covered.</p>
+<p>Whether you’re stopping by for a quick cup, settling in with a book, or catching up with friends, we’re here to make every sip and bite memorable. Our café is more than just a place to grab a drink—it’s a warm, inviting space where people can connect, relax, and savor every bite and sip. Come in, grab a cup, and let’s make today delicious!<br><img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/480923602_606576795678938_4697215132037505152_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=t6nR8Q7qaFEQ7kNvgHsvkx7&_nc_oc=Admt23Q0_peDGDiQwaEBDCbyZYS2vHZsc5_RkSdr4AJ_x27lczLNvQBS3-MMUPsYnJA&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=acbDBJOZ5HR8zZDpKkpQ8A&oh=00_AYEY4uIW7FI6Q1q_fxv80Z7VciLwPQBDQe_Pe_x8jPDq4w&oe=67E42049" alt="A cozy sanctuary" width:"60%" max-width:"200 px";></p>
+</section>
+</div>
+
+<br>
+
+<div class="container" id="services">
+ <section>
+   <h2 style="color: #FF5D8F;"><strong>SERVICES</strong></h2>
+<p>We’re dedicated to providing more than just exceptional coffee and pastries—we create an experience. Whether you’re looking for a cozy space to enjoy your morning brew, a quick grab-and-go option, or catering for a special event, we have you covered. Our café offers both dine-in and takeout services, allowing you to enjoy our handcrafted drinks and freshly baked pastries at your own pace. For those on the go, we provide convenient online ordering and pickup, making it easier than ever to get your favorite treats.</p>
+</section>
+
+</div>
+
+ <section id="products">
+<h1 style="color:#FF5D8F; text-align: center;">PRODUCTS</h1>
+
+<h2 style="color:#8A00C2;"><strong>BREWED COFFEE</strong></h2>
+<p>Simple, Pure, and Full of Flavor!</p>
+
+ <div class="products-container">
+<div class="product">
+<h3>Plain Brewed Coffee</h3>
+<img src="https://i.pinimg.com/474x/ce/c9/5d/cec95dd567d37f272eb458a8fe31e6c0.jpg" alt="Plain Brewed Coffee"
+style=width:"100%"; max-width:"200 px;">
+<p>A classic, bold, and rich cup for those who love their coffee pure and strong.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;65<br>16 ounces-&#8369;70</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Sweetened Brewed Coffee</h3>
+<img src="https://tse4.mm.bing.net/th?id=OIP.HWiWHVKtQr9mB_ARB0SlNgHaLG&pid=Api&P=0&h=220" alt="Sweetened Brewed Coffee"
+style=width:"100%"; max-width:"200 px;">
+<p>The same deep, smooth coffee flavor with just the right touch of sweetness.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;85<br>16 ounces-&#8369;100</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Hazelnut Brewed Coffee</h3>
+<img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/480818123_623605310429575_5552163968134829160_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=V6tqs2gwNloQ7kNvgEgkmPw&_nc_oc=AdkNZjs39CkN6q_V-s7A0gx7zrwVP0ZrhuINuPnuI9taFAaNtEC6k-WdzE9E60HfpwU&_nc_zt=23&_nc_ht=scontent.fcrk1-4.fna&_nc_gid=3OM1-4q8oYGEP32dzcBlnA&oh=00_AYGuSVdGnYxquukFMefSx83vtqmgZAzwXJ3LpPfdK7xJbA&oe=67E411B5" alt="Hazelnut Brewed Coffee"
+style=width:"100%"; max-width:"200 px;">
+<p>A warm, nutty infusion that adds a velvety richness to your daily brew.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;95<br>16 ounces-&#8369;110</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+
+<h3>Vietnamese Brewed Coffee</h3>
+<img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/330440390_225059309995371_434765091929431275_n.png?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=P4lBXosvgNQQ7kNvgFW9_8v&_nc_oc=AdlEPzpqvxPoUclxnBqn5UXt8hI5lE00IbMUJS0Zx2Z3M6cjE5HYtgTh2R_fFyR72v8&_nc_zt=23&_nc_ht=scontent.fcrk1-4.fna&_nc_gid=_2ElDhCF-_eWlDxOB1QynQ&oh=00_AYGPnNsLWczeX4KU1QwLWRIjxOm1CxTUuYxVb909Vtf7HA&oe=67E445EB" alt="Vietnamese Brewed Coffee"
+style=width:"100%"; max-width:"200 px;">
+<p>A bold, slow-dripped coffee with an intense kick—best enjoyed black or with creamy condensed milk.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;75<br>16 ounces-&#8369;80</p>
+</div></div>
+
+<section id="products">
+<h2 style="color:#8A00C2;"><strong>ESPRESSO SERIES</strong></h2>
+<p>A Burst of Boldness in Every Sip!</p>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Americano</h3>
+<img src="https://tse1.mm.bing.net/th?id=OIP.lwUOu8DInN7gMHApNxomZwHaHa&pid=Api&P=0&h=220" alt="Americano"
+style=width:"100%"; max-width:"200 px;">
+<p>A smooth yet strong espresso-based coffee for those who love a clean, deep flavor.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;110<br>16 ounces-&#8369;120</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Cafe Latte</h3>
+<img src="https://tse1.mm.bing.net/th?id=OIP.V7UZCviUWK3k0M9gNfQRkAHaLH&pid=Api&P=0&h=220" alt="Cafe Latte"
+style=width:"100%"; max-width:"200 px;">
+<p>Velvety steamed milk meets robust espresso for the perfect creamy, smooth blend.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;130<br>16 ounces-&#8369;140</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Caramel Macchiato</h3>
+<img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/482217565_625058060284300_2681908757624057527_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Hk_8HBINHLQQ7kNvgErRpl4&_nc_oc=Adnz-KlkF39IPuzxwQyMUYlSUjMN-z4YSuvFEPbdru38kW1n69jeKdcIE9JB1Gvde0M&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=uXpYSsUVXaNpsJM2gBEUsA&oh=00_AYERNYXgmO1SeaCg3LH54H92MZc42Blp3-tPGmeVT37iPw&oe=67E43098" alt="Caramel Macchiato"
+style=width:"100%"; max-width:"200 px;">
+<p>A luscious combination of espresso, milk, and sweet caramel drizzle.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;130<br>16 ounces-&#8369;140</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Mocha</h3>
+<img src="https://tse1.mm.bing.net/th?id=OIP.ixJhTxZ5yyIiYStB-9dlEgHaJQ&pid=Api&P=0&h=220" alt="Mocha"
+style=width:"100%"; max-width:"200 px;">
+<p>When bold espresso meets chocolatey goodness, you get this rich, indulgent treat.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;130<br>16 ounces-&#8369;140</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Salted Caramel</h3>
+<img src="https://tse4.mm.bing.net/th?id=OIP.4OWeeqnL-L_IozxE07x3VwHaE8&pid=Api&P=0&h=220" alt="Salted Caramel"
+style=width:"100%"; max-width:"200 px;">
+<p>The perfect balance of sweet caramel and a hint of sea salt, blended into smooth espresso.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;130<br>16 ounces-&#8369;140</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Spanish Latte</h3>
+<img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/362981919_255451017245214_8488392671703200357_n.png?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vzLAwFl2Xr4Q7kNvgEGH1O5&_nc_oc=AdljIHR7DJlGxFNf5EcbO472Pp_N0iEIcWiDhzUoFSNir3yVTrBX5470fIXH-bKy4Qk&_nc_zt=23&_nc_ht=scontent.fcrk1-1.fna&_nc_gid=nvWBYKT7wo-RtWCFQu_2_Q&oh=00_AYEDbJIQJpU9yiVFAgU_XEe8w1nNlQJdqbhoetZzfJ9HZQ&oe=67E433D8" alt="Spanish Latte"
+style=width:"100%"; max-width:"200 px;">
+<p>A full-bodied, sweet espresso-milk fusion that’s luxuriously creamy and bold.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;130<br>16 ounces-&#8369;140</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>White Mocha</h3>
+<img src="https://tse1.mm.bing.net/th?id=OIP.RjvrhR9LQz0wYgtkZRaR-wHaLH&pid=Api&P=0&h=220" alt="White Mocha"
+style=width:"100%"; max-width:"200 px;">
+<p>White chocolate and espresso unite for a smooth, velvety, and ultra-satisfying experience.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;130<br>16 ounces-&#8369;140</p>
+</div></div>
+
+<section id="products">
+<h2 style="color:#8A00C2;"><strong>MATCHA SERIES</strong></h2>
+<p>A Taste of Japan in Every Sip!</p>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Dirty Matcha</h3>
+<img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/481459257_625057983617641_2992760252721448038_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=FPnjIC1ag0kQ7kNvgHc_Olm&_nc_oc=AdkXbPypbs4CTdxWOV63BcPJrwFGaM_b8g3HwrMsgYxqBnMUKUShCnl-a-mgO4gTGPo&_nc_zt=23&_nc_ht=scontent.fcrk1-4.fna&_nc_gid=3ONd-Hq8DUJYXj7z7o9vew&oh=00_AYH5iOzBoEckZBIHRtCOqba_wpyZ2Mz-pGg7MmGi528j_Q&oe=67E447B6" alt="Dirty Matcha"
+style=width:"100%"; max-width:"200 px;">
+<p>A bold espresso shot meets earthy matcha, creating a unique and energizing blend.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;120<br>16 ounces-&#8369;130</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Matcha Latte</h3>
+<img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/344211460_6259777920756446_5364972561733293342_n.png?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=J137CdfTlrcQ7kNvgF7BpD1&_nc_oc=AdloGt1PIf8xjvuy-viyE5nVVbFnNFXr7g3Tai3FsDDJTwyNt28AI5uGRs0BYeek6UY&_nc_zt=23&_nc_ht=scontent.fcrk1-4.fna&_nc_gid=y67iwt9lQ0eRj5j2yNKncw&oh=00_AYFI-zsiKlzYckXUhcC5GJEmr-iZ2HkVs9IxnVg-jCHMMw&oe=67E4249A" alt="Matcha Latte"
+style=width:"100%"; max-width:"200 px;">
+<p>Smooth, creamy, and packed with the rich, grassy flavors of high-quality matcha.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;110<br>16 ounces-&#8369;120</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Matcha Strawberry</h3>
+<img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/480749345_602571959412755_3197530285119667663_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6crJu-tDHCQQ7kNvgG_iT3S&_nc_oc=AdkUBx-0GiIowO2fPWZ_CvA-KrClWJgGDLUpJ6EFYP6hGjUcGxEOKBmezTwhFfwneTg&_nc_zt=23&_nc_ht=scontent.fcrk1-4.fna&_nc_gid=rkGfHusxHnn6fhPQydlSqQ&oh=00_AYFi-A161kf0ariHEmG0UU1bGAZ4KIK2OaQpM4G6TQ5Qzg&oe=67E43554" alt="Matcha Strawberry"
+style=width:"100%"; max-width:"200 px;">
+<p>A delightful mix of matcha’s boldness with the sweet, fruity burst of strawberry.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;130<br>16 ounces-&#8369;140</p>
+</div></div>
+
+<section id="products">
+<h2 style="color:#FF5D8F;"><strong>DECADENT DELIGHTS</strong></h2>
+
+<section id="product">
+<h2 style="color:#8A00C2;"><strong>MILK BASED</strong></h2>
+<p>Creamy, Smooth, and Oh-So-Satisfying!</p>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Milky Butterscotch</h3>
+<img src="https://tse4.mm.bing.net/th?id=OIP.14NIwKzNTOPksmU1uer3OAHaHa&pid=Api&P=0&h=220" alt="Milky Butterscotch"
+style=width:"100%"; max-width:"200 px;">
+<p>A silky, sweet butterscotch-infused delight.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;110<br>16 ounces-&#8369;130</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Milky Caramel</h3>
+<img src="https://tse1.mm.bing.net/th?id=OIP.CYl7wFxECRBjAh5bqvZ-egHaLG&pid=Api&P=0&h=220" alt="Milky Caramel"
+style=width:"100%"; max-width:"200 px;">
+<p>The smoothness of milk meets the sweetness of caramel in every sip.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;110<br>16 ounces-&#8369;130</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Milky Chocolate</h3>
+<img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/304007556_122354753888175_2229485150893790052_n.png?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=pSP1P8lBdD8Q7kNvgGm_ZXW&_nc_oc=AdkGWvqfZg0_GK1ak9MfSQDEVGv_B6VZ9zcNv8M7udyqHB_8YxtpS46FTWOxwc3EDdM&_nc_zt=23&_nc_ht=scontent.fcrk1-4.fna&_nc_gid=pdc0LxsZU8TBkQOB3ZG1gg&oh=00_AYF9ElxgllHX3jfPcCFEiC-6-to07TSxDZCqlxLbuAi97Q&oe=67E41F16" alt="Milky Chocolate"
+style=width:"100%"; max-width:"200 px;">
+<p>Rich, creamy chocolate milk for the ultimate comfort drink.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;110<br>16 ounces-&#8369;130</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Milky Salted Caramel</h3>
+<img src="https://tse3.mm.bing.net/th?id=OIP.I7u_2VabutxbUxYSiODLbAHaE8&pid=Api&P=0&h=220" alt="Milky Salted Caramel"
+style=width:"100%"; max-width:"200 px;">
+<p>A sweet-and-salty caramel treat blended to perfection.</p>
+<p style="color: #FF5D8F;">12 ounces-&#8369;110<br>16 ounces-&#8369;130</p>
+</div></div>
+
+<section id="products"
+<h2><strong>Pastries</strong></h2>
+<p>The Perfect Pair for Your Coffee!</p>
+
+
+<div class="products-container">
+<div class="product">
+
+<h3>Spanish Bread</h3>
+<img src="https://tse3.mm.bing.net/th?id=OIP.4nk620dr--uvrqrbaku5CgHaJ4&pid=Api&P=0&h=220" alt="Spanish Bread"
+style=width:"100%"; max-width:"200 px;">
+<p>Soft, fluffy bread with a sweet, buttery filling that melts in your mouth.</p>
+<p style="color: #FF5D8F;">&#8369;40</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Cream Cheese Donut</h3>
+<img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/481213994_608690732134211_4107593023654352699_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KwRDz_vinrQQ7kNvgEDvbwK&_nc_oc=AdnbkHJZaOBh6UXXE-EgkeSYt4yYChgdFuCmxr6oqZpBxYcueT_d8hP68U0282K9Aik&_nc_zt=23&_nc_ht=scontent.fcrk1-1.fna&_nc_gid=mrW97kSYk6ibPNOBMb4a2Q&oh=00_AYEuq_2hCUX0UVe9Xi-N2ilsDr15WypEVqywtT96ConnCQ&oe=67E429E9" alt="Cream CheeseDonut"
+style=width:"100%"; max-width:"200 px;">
+<p>A light, airy donut generously filled with creamy, tangy-sweet cheese.</p>
+<p style="color: #FF5D8F;">&#8369;70</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Classic Ensaymada</h3>
+<img src="https://tse3.mm.bing.net/th?id=OIP.Km_aCeuuHMUnYihwGCdv-gHaEO&pid=Api&P=0&h=220" alt="Classic Ensaymada"
+style=width:"100%"; max-width:"200 px;">
+<p>A soft, buttery pastry topped with sugar and cheese for the perfect sweet-savory bite.</p>
+<p style="color: #FF5D8F;">&#8369;60</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Cinnamon Roll</h3>
+<img src="https://tse2.mm.bing.net/th?id=OIP.dZOc-dc7KPRWEwWXJTaCTgHaLG&pid=Api&P=0&h=220" alt="Cinnamon Roll"
+style=width:"100%"; max-width:"200 px;">
+<p>Swirls of cinnamon-sugar goodness, baked to perfection and topped with a sweet glaze.</p>
+<p style="color: #FF5D8F;">&#8369;110</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Croissant</h3>
+<img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/481203825_608690538800897_4043569957869775484_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Xoz8crBUFw4Q7kNvgEjhQYK&_nc_oc=AdkJhaYSzDqiFMtatnegGeri3KqOGehfn5wdW1k0NYBv_f1OzT9yUfz3pSI66zqaiAo&_nc_zt=23&_nc_ht=scontent.fcrk1-4.fna&_nc_gid=61co5pJKEnOs5yWAoY6c7g&oh=00_AYFVcRVV_z1IA3RLq3LwYfO7zo9-QgqsGkwZH281rRvz0g&oe=67E43985" alt="Croissant"
+style=width:"100%"; max-width:"200 px;">
+<p>Buttery, flaky, and irresistibly light—a classic French pastry that pairs perfectly with coffee.</p>
+<p style="color: #FF5D8F;">&#8369;100</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Pain Au Chocolat</h3>
+<img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/481977052_633623856094387_1946917694886222324_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=g5XtCCblbJYQ7kNvgFl67mN&_nc_oc=AdkKLtDcfAajU9tLEzBFKMifZPX3kawWQ7F3ijyV8_iYnh-CnWs8Oa1O-AxwE8ZVEgA&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=sBDVrHB-7wfxoktj1-zE5A&oh=00_AYHDw-pUx37Ju7rlIL8U3lN07O3dXlaAPUMD0YrvBPiGYQ&oe=67E43562" alt="Pain Au Chocolat"
+style=width:"100%"; max-width:"200 px;">
+<p>Layers of delicate pastry filled with rich, melted chocolate.</p>
+<p style="color: #FF5D8F;">&#8369;110</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Kouign-Amann</h3>
+<img src="https://tse2.mm.bing.net/th?id=OIP.-4x6rrj1h8qvytQQqpoUDQHaIe&pid=Api&P=0&h=220" alt="Kouign-Amann"
+style=width:"100%"; max-width:"200 px;">
+<p>A caramelized, buttery pastry with a crisp, golden exterior and a soft, flaky center.</p>
+<p style="color: #FF5D8F;">&#8369;90</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Chocolate Chip Cookie</h3>
+<img src="https://tse4.mm.bing.net/th?id=OIP.x7R6pgnkLSvZ4Vfyabm8oAHaFu&pid=Api&P=0&h=220" alt="Chocolate Chip Cookie"
+style=width:"100%"; max-width:"200 px;">
+<p>Golden-brown, chewy, and packed with rich chocolate chips.</p>
+<p style="color: #FF5D8F;">4pcs-&#8369;110 8pcs-&#8369;175</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Revel Bar</h3>
+<img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/481112266_608690955467522_4267865730498689761_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=-YjuJfELF1EQ7kNvgEZInhi&_nc_oc=AdmYP7ouBuky3zC8UrE7i-02k54I8DVMA2Bjh2iqqxG2P6Cvi7bkQCJtoQnKQYVKFoM&_nc_zt=23&_nc_ht=scontent.fcrk1-1.fna&_nc_gid=HUsbOIawJt5LLOTaGUxdzg&oh=00_AYG7cwjclWarDB_0ofY91TM0Ox5yHNqcLugssW9PwO5sVQ&oe=67E436A3" alt="Revel Bar"
+style=width:"100%"; max-width:"200 px;">
+<p>A decadent treat with layers of chewy oats and rich, fudgy chocolate.</p>
+<p style="color: #FF5D8F;">&#8369;55</p>
+</div></div>
+
+<section="product">
+<h2 style="color:#8A00C2;"><strong>COOKIES</strong></h2>
+<p>Crunchy, Chewy, and Absolutely Delicious!</p>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Biscoff Cookie</h3>
+<img src="https://tse3.mm.bing.net/th?id=OIP.ylrPi3zrvadS5K30xbiKKwHaLG&pid=Api&P=0&h=220" alt="Biscoff Cookie"
+style=width:"100%"; max-width:"200 px;">
+<p>A caramelized, spiced cookie with a deep, rich flavor.</p>
+<p style="color: #FF5D8F;">&#8369;90</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Choco Oats Cookie</h3>
+<img src="https://tse2.mm.bing.net/th?id=OIP.uqJfQNLeQdrpYErPBVIfAQHaLH&pid=Api&P=0&h=220" alt="Choco Oats Cookie"
+style=width:"100%"; max-width:"200 px;">
+<p>A hearty and chewy chocolate oat cookie with just the right amount of sweetness.</p>
+<p style="color: #FF5D8F;">&#8369;90</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Classic Choco Cookie</h3>
+<img src="https://tse1.mm.bing.net/th?id=OIP.JICTvYb_2MY-MFbaGsO4bwHaI3&pid=Api&P=0&h=220" alt="Classic Choco Cookie"
+style=width:"100%"; max-width:"200 px;">
+<p>A timeless favorite—soft, chewy, and packed with chocolate chunks.</p>
+<p style="color: #FF5D8F;">&#8369;90</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Dreamy Velvet Cookie</h3>
+<img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/384748116_300337856282024_8288120801324801862_n.png?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SRp-ZETuvmkQ7kNvgGU2TNY&_nc_oc=AdnaO3JgUiC3BQ3ib39esr3P8H6le4Sb-3js4cC5YwsOq3r2OAaLk-lHEzFZcYg9-2c&_nc_zt=23&_nc_ht=scontent.fcrk1-1.fna&_nc_gid=7uL_MmD-A6VQHMbuhAYi3Q&oh=00_AYG0Tz0nIo6yFCTZlihigW4pJ6e3mZnRTfybn-XY_OYduA&oe=67E431F1" alt="Dreamy Velvet Cookie"
+style=width:"100%"; max-width:"200 px;">
+<p>A rich red velvet cookie with a smooth, creamy center.</p>
+<p style="color: #FF5D8F;">&#8369;90</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Nutella Cookie</h3>
+<img src="https://tse2.mm.bing.net/th?id=OIP.6t9XjqbfUYD9wXQ5fcfZBgHaLH&pid=Api&P=0&h=220" alt="Nutella Cookie"
+style=width:"100%"; max-width:"200 px;">
+<p>A gooey, chocolatey cookie with a heart of melted Nutella.</p>
+<p style="color: #FF5D8F;">&#8369;90</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>S’mores Cookie</h3>
+<img src="https://tse2.mm.bing.net/th?id=OIP.8kM2yCXUREIm-vD-ycwETwHaKT&pid=Api&P=0&h=220" alt="S’mores Cookie"
+style=width:"100%"; max-width:"200 px;">
+<p>A campfire classic in cookie form, with gooey marshmallow and chocolate goodness.</p>
+<p style="color: #FF5D8F;">&#8369;90</p>
+</div></div>
+
+ <section id="product">
+
+<h2 style="color:#8A00C2;"><strong>CAKES</strong></h2>
+<p>A Slice of Pure Happiness!</h3>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Carrot Cake.</h3>
+<img src="http://3.bp.blogspot.com/_JEROipmsFrY/TKp07ZdDFWI/AAAAAAAAAkI/snsDMZZrEjY/s1600/DSC_0047.JPG" alt="Carrot Cake"
+style=width:"100%"; max-width:"200 px;">
+<p>A moist, spiced cake with grated carrots and nuts, topped with luscious cream cheese frosting.</p>
+<p style="color: #FF5D8F;">&#8369;220</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Red Velvet Cake</h3>
+<img src="https://tse1.mm.bing.net/th?id=OIP.tKe0xEJsR2DzdyNoDj-9PQHaIe&pid=Api&P=0&h=220" alt="Red Velvet Cake"
+style=width:"100%"; max-width:"200 px;">
+<p>A soft, velvety cake with a deep cocoa flavor, layered with smooth cream cheese frosting.</p>
+<p style="color: #FF5D8F;">&#8369;220</p>
+</div></div>
+
+<div class="products-container">
+<div class="product">
+
+<h3>Dark Chocolate Cake</h3>
+<img src="https://tse2.mm.bing.net/th?id=OIP.sRD0ZzSG7DxUQRK4rRBmDwHaHa&pid=Api&P=0&h=220" alt="Dark Chocolate Cake"
+style=width:"100%"; max-width:"200 px;">
+<p>Rich, moist, and intensely chocolatey, perfect for true chocolate love.</p>
+<p style="color: #FF5D8F;">&#8369;220</p>
+</div></div>
+
+
+<div class="review">
+        <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-1/475417379_10228494218001911_1520045201405716505_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=Z8RsrM5VOngQ7kNvgHtOIKe&_nc_oc=Adlk-ycjbOIyEHwxT_U213cFfLIdnzrWhQCsmOPD9S6p9hKWC8ePn7iSq_auD1QkwoM&_nc_zt=24&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=jrxqqGYuLXlx1-hY2VVYmg&oh=00_AYFrx7WFfNTqRU28aJPc7wB8UzyXY7uMVG6OH8WuDqnGAw&oe=67E43324" alt="Faye Chan-Cruz">
+        <h3>Faye Chan-Cruz</h3>
+        <p>"The staff are very accommodating and the shop is very cozy but most of all the coffee and food is superb!
+             Relaxing atmosphere, and expert baristas"</p>
+        <div class="rating">
+            <span style="color: gold;">&#9733;</span><span style="color: gold;">&#9733;</span><span style="color: gold;">&#9733;</span><span style="color: gold;">&#9733;</span><span style="color: gold;">&#9733;</span>
+        </div>
+        </div>
+<div class="review">
+        <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-1/457231911_8690230810995054_3555544292916800469_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=deGHMq42Do0Q7kNvgGcN5sC&_nc_oc=AdlPkZ8jM6RNuqzixMkArtSY-03W3kkExCdb6u4yUT535HecwIl5MMRhdAHF1nECTcM&_nc_zt=24&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=Hnf24AFRoxVIO5egaG2L1A&oh=00_AYHkOvpNDv3CxKlyPbbxecw9wWQzG2DbewlNYMUEwjD8Wg&oe=67E4430F" alt="Irms Castro">
+        <h3>Irms Castro</h3>
+        <p>"Best coffee in Gapan! must try! relaxing atmosphere, convenient location, strong cold brew"</p>
+        <div class="rating">
+            <span style="color: gold;">&#9733;</span><span style="color: gold;">&#9733;</span><span style="color: gold;">&#9733;</span><span style="color: gold;">&#9733;</span><span style="color: gold;">&#9733;</span>
+</div></div>
+
+<div class="review">
+        <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-1/480882848_9785824374784475_5687438157437706131_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=nJXJElwEQeQQ7kNvgH_Fsde&_nc_oc=AdnLzyCrcf_nciEP_NPwzefClwjiwqfcpksd7g9vNEtOK8LYEqs3tWdFcDhBJKdVOfI&_nc_zt=24&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=nJb6LsyY2jzfzg3h4Zq4Lg&oh=00_AYFcHlfTVt4XsYLN3UbpzYuGTCVGMBfX0Q96Z1gvXNHexA&oe=67E4108B" alt="Joy Ann">
+        <h3>Joy Ann</h3>
+        <p>"Best coffee pasta and pastries, babalik-balikan talaga. Best coffee, best iced coffee."</p>
+        <div class="rating">
+            <span style="color: gold;">&#9733;</span><span style="color: gold;">&#9733;</span><span style="color: gold;">&#9733;</span><span style="color: gold;">&#9733;</span><span style="color: gold;">&#9733;</span>
+</div></div>
+
+<section id="contact">
+<div class="products-container">
+<div class="product">
+
+<h1 style="text-align: center;">ORDER NOW!</h1>
+
+<form action="/action_page.php">
+  <label for="fname">Full Name:</label><br>
+  <input type="text" id="fname" name="fname" value="Liam Carter"><br>
+  <label for="order">Order:</label><br>
+  <input type="text" id="order" name="order" value="Caramel Macchiato"><br>
+  <label for="quantity">Quantity:</label><br>
+  <input type="number" id="quantity" name="quantity"><br>
+  <label for="number">Phone Number:</label><br>
+  <input type="text" id="number" name="number" value="111-111-111"><br>
+  <label for="slevel">Sugar Level:</label><br>
+  <input type="range" id="slevel" name="slevel"<br><br>
+  <input type="submit" value="Submit">
+</form> 
+</div></div>
+
+<div class="container" id="contact">
+
+<h1 style="text-align: center;">CONTACT US &#9829;</h1>
+<p>LINKS FOR OUR SOCIAL MEDIA:<br>
+<a href="https://www.instagram.com/butfirstcoffeegapan?fbclid=IwY2xjawJKG89leHRuA2FlbQIxMAABHa-92_OCRLnJxZGV8S4NhULRzaE3rE_M3-d-YwO1oE3qTwNJOeyQgNJ3zA_aem_KiKOHcs-JtYBsEuPwS2Tbw">Instagram</a></a><br>
+<a href="https://www.facebook.com/butfirstcoffeegapan">Facebook</a><br>
+Phone Number: 0993 898 4836<br>
+Address: Delos Reyes Street, San Vicente, Gapan, Philippines.<p>
+</div><br><br><br><br><br>
+
+
+<section id="footer">
+<footer style="text-align: center;">
+Copyright &copy; 2025 But First, Coffee. All Rights Reserved. Author: Ma. Alexa Jewelle V. Cabrera
+</footer>
+</body>
+</html>
